@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+}
+
+.banner {
+  background: #ffffff;
+  height: 90vh;
+}
+
+button {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+input[type='color'] {
+  width: 30px;
+  height: 30px;
+  border: 0;
+}
+
+.inner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner-container .content {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  color: white;
+}
+
+.inner-container .content .lock {
+  margin: 0.5rem 0;
+  border: 0;
+  outline: 0;
+}
+
+.inner-container .content .lock.locked {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+
+.inner-container .content .hex-value {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+#generate {
+  width: 100%;
+  height: 10vh;
+  background: #53687e;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+#generate:hover {
+  background: #3a4454;
+}
+
+@media (max-width: 767px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner {
+    height: calc(90vh / 5);
+  }
+  button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  input[type='color'] {
+    width: 20px;
+    height: 20px;
+    border: 0;
+  }
+  .inner-container .content {
+    background: rgba(0, 0, 0, 0);
+  }
+  .inner-container .content .hex-value {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
